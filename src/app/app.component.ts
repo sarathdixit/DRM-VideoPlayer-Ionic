@@ -10,6 +10,15 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
+  stream = {
+    source: 'https://storage.googleapis.com/shaka-demo-assets/angel-one-widevine/dash.mpd',
+    licenseServers: {
+        'com.widevine.alpha': {
+            serverURL: 'https://widevine-proxy.appspot.com/proxy'
+        }
+    },
+    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...'
+}
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,

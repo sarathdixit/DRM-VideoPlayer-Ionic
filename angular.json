@@ -37,9 +37,14 @@
               },
               {
                 "input": "src/global.scss"
+              }, 
+              {
+                "input": "node_modules/@videogular/ngx-videogular/fonts/videogular.css"
               }
             ],
-            "scripts": []
+            "scripts": [ {
+              "input": "node_modules/dashjs/dist/dash.all.min.js"
+            }]
           },
           "configurations": {
             "production": {
